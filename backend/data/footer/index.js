@@ -5,11 +5,11 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/feed/noman23",
+    link: "https://www.linkedin.com/in/noman23",
   },
   {
     name: "Twitter",
-    link: "https://www.twittter.com/noman_1998",
+    link: "https://www.twitter.com/noman_1998",
   },
   {
     name: "Facebook",

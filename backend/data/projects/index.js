@@ -24,14 +24,14 @@ const projects = [
     name: "FoodExpress",
     desc: "This is an ecommerce project we've created in a team collaboration as our first react project at a course we're in.",
     img: ecommerceImg,
-    liveLink: "",
-    githubLink: "https://github.com/noman023/foodExpress",
+    liveLink: "https://foodexpress-0x.vercel.app/",
+    githubLink: "https://github.com/noman023/foodExpress-client",
   },
   {
     name: "Hoobank",
     desc: "This project created from a figma design to a react project.",
     img: hoobankImg,
-    liveLink: "",
+    liveLink: "https://hoobank-noman.netlify.app/",
     githubLink: "https://github.com/noman023/figma-to-react",
   },
 ];
