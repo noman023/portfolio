@@ -16,10 +16,7 @@ export default async function About() {
           <p className="text-sm sm:text-base text-justify">{details}</p>
 
           <a href={cvLink} target="_blank">
-            <button
-              r
-              className=" bg-green-600 hover:bg-green-700 duration-200 rounded-2xl text-sm sm:text-base p-2 mt-5"
-            >
+            <button className=" bg-green-600 hover:bg-green-700 duration-200 rounded-2xl text-sm sm:text-base p-2 mt-5">
               View Resume
             </button>
           </a>
