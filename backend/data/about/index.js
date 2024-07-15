@@ -1,16 +1,10 @@
-const fs = require("fs");
-
-const image = fs.readFileSync(`${__dirname}/img/noman.jpg`, {
-  encoding: "base64",
-});
-
 const about = {
   headline: "Hi, I'm Noman",
   details:
-    "A JavaScript Developer with a focus on frontend development using React.js and familiar with backend technology like Node Js.",
+    "A JavaScript Developer with a focus on frontend development using React.js ecosystem. Familiar with backend technologies like Node.js and express.js, as well as databases such as MongoDB.",
   cvLink:
-    "https://drive.google.com/file/d/1mKeur2fhtxc31FcZ0FLBOC_hMd6MX5cP/view?usp=sharing",
-  img: image,
+    "https://drive.google.com/file/d/19iMGcZztoKCvO48zUmrwF0DoLCLM-6AB/view?usp=sharing",
+  img: "https://i.ibb.co/88pYr2X/1644657619001.jpg",
 };
 
 module.exports = about;
