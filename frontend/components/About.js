@@ -7,7 +7,7 @@ export default async function About() {
   const { headline, details, cvLink, img } = res.data;
 
   return (
-    <main className="py-[60px] flex flex-col-reverse gap-7 md:flex-row">
+    <main className="py-[60px] flex flex-col-reverse gap-7 md:flex-row px-5 md:px-0">
       {/* text div */}
       <div className="w-full md:w-1/2">
         <div className="md:w-2/3 mx-auto md:mt-7">

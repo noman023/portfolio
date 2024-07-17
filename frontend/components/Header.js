@@ -3,7 +3,7 @@ import { dancingScript } from "@/app/layout";
 
 export default function Header() {
   return (
-    <div className="py-2 flex justify-between items-center">
+    <div className="py-2 flex justify-between items-center px-5 md:px-0">
       <a href="/">
         <h1 className={`text-4xl ${dancingScript.className}`}>Noman</h1>
       </a>
