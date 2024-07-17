@@ -1,4 +1,5 @@
 import axios from "axios";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default async function Projects() {
   const res = await axios.get("http://localhost:4000/projects");
@@ -21,16 +22,26 @@ export default async function Projects() {
                 <div className="h-full flex flex-col justify-between border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <div className="p-3">
                     <img
-                      className="lg:h-48 md:h-36 w-full object-cover object-center"
-                      src={`data:image/jpeg;base64,${obj.img}`}
+                      className="lg:h-48 md:h-36 w-full"
+                      src={obj.img}
                       alt="blog"
                     />
                   </div>
 
                   <div className="p-3">
-                    <h1 className="text-xl font-semibold text-white mb-1">
-                      {obj.name}
-                    </h1>
+                    <div className="flex justify-between items-center">
+                      <h1 className="text-xl font-semibold text-white mb-1">
+                        {obj.name}
+                      </h1>
+
+                      <a
+                        href={obj.liveLink}
+                        target="_blank"
+                        className="flex items-center gap-1 hover:text-gray-400"
+                      >
+                        Live <FaArrowRightLong />
+                      </a>
+                    </div>
 
                     <p className=" text-base text-slate-400 mb-5">{obj.desc}</p>
                   </div>
@@ -38,12 +49,6 @@ export default async function Projects() {
                   <div className="p-3">
                     {Object.keys(obj).length === 5 ? (
                       <div className="flex items-center justify-between text-base font-medium">
-                        <a href={obj.liveLink} target="_blank">
-                          <button className=" w-[100px] rounded-lg bg-teal-600 hover:bg-teal-700 capitalize p-1 duration-200">
-                            live
-                          </button>
-                        </a>
-
                         <a href={obj.githubLink} target="_blank">
                           <button className="w-[100px] rounded-lg bg-purple-800 hover:bg-purple-900 capitalize p-1 duration-200">
                             github
