@@ -18,8 +18,8 @@ export default async function Footer() {
   });
 
   return (
-    <section className="flex items-center justify-center text-gray-400 sm:mt-10 py-10">
-      <div className="w-full sm:w-1/5 flex items-center justify-around sm:justify-between">
+    <section className="flex items-center justify-center text-gray-400 mt-10 pt-7 pb-10 border-t border-gray-500">
+      <div className="w-full md:w-1/5 flex items-center justify-around md:justify-between">
         {updatedData.map((obj) => (
           <div>
             <a href={obj.link} target="_blank" title={`To ${obj.name} Profile`}>
