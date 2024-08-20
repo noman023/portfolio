@@ -58,8 +58,10 @@ export default async function Projects() {
                     {obj.sourceLink.map((src, idx) => (
                       <a href={src.link} target="_blank" key={idx}>
                         <button
-                          className={`rounded-lg bg-purple-800 hover:bg-purple-900 ${
-                            idx === 1 && "bg-blue-800 hover:bg-blue-900"
+                          className={`rounded-lg ${
+                            idx === 0
+                              ? "bg-purple-800 hover:bg-purple-900"
+                              : "bg-blue-800 hover:bg-blue-900"
                           } capitalize py-2 px-4 duration-300`}
                         >
                           {src.name}
