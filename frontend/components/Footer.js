@@ -1,4 +1,3 @@
-import axios from "axios";
 import {
   FaFacebookSquare,
   FaGithub,
@@ -6,11 +5,12 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
+import { fetchData } from "@/utils/fetchData";
+
 const iconComponents = [FaGithub, FaLinkedin, FaTwitter, FaFacebookSquare];
 
 export default async function Footer() {
-  const res = await axios.get("http://localhost:4000/footer");
-  const data = res.data;
+  const data = await fetchData("footer");
 
   const updatedData = data.map((obj, index) => {
     const IconComponent = iconComponents[index];

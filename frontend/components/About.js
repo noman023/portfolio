@@ -1,10 +1,9 @@
-import axios from "axios";
 import Image from "next/image";
 
-export default async function About() {
-  const res = await axios.get("http://localhost:4000");
+import { fetchData } from "@/utils/fetchData";
 
-  const { headline, details, cvLink, img } = res.data;
+export default async function About() {
+  const { headline, details, cvLink, img } = await fetchData();
 
   return (
     <main className="py-[60px] flex flex-col-reverse gap-7 md:flex-row px-5 md:px-0">

@@ -1,11 +1,10 @@
-import axios from "axios";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { dancingScript } from "@/app/layout";
 
-export default async function Projects() {
-  const res = await axios.get("http://localhost:4000/projects");
+import { fetchData } from "@/utils/fetchData";
 
-  const data = res.data;
+export default async function Projects() {
+  const data = await fetchData("projects");
 
   return (
     <section className="mt-12 sm:mt-20">
