@@ -9,7 +9,7 @@ export const dancingScript = Dancing_Script(
 );
 
 export const metadata = {
-  title: "Noman's Portfolio",
+  title: "Portfolio of Noman",
 };
 
 export default function RootLayout({ children }) {
