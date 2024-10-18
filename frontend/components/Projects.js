@@ -7,7 +7,7 @@ export default async function Projects() {
   const data = await fetchData("projects");
 
   return (
-    <section className="mt-12 sm:mt-20">
+    <section id="projects" className="mt-12 sm:mt-20">
       <div className="container px-5 mx-auto">
         <div>
           <h1

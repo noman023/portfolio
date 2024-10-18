@@ -20,7 +20,7 @@ export default function Skills() {
 `;
 
   return (
-    <>
+    <div id="skills">
       <div>
         <h1
           className={`text-center text-4xl uppercase mb-10 ${dancingScript.className}`}
@@ -34,6 +34,6 @@ export default function Skills() {
           {skillsString}
         </SyntaxHighlighter>
       </div>
-    </>
+    </div>
   );
 }
