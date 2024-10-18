@@ -24,7 +24,7 @@ export default async function Footer() {
         {updatedData.map((obj, idx) => (
           <div key={idx}>
             <a href={obj.link} target="_blank" title={`To ${obj.name} Profile`}>
-              <obj.IconComponent className="w-6 h-6" />
+              <obj.IconComponent className="w-6 h-6 hover:text-gray-500 duration-300" />
             </a>
           </div>
         ))}
