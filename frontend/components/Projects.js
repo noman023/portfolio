@@ -17,17 +17,17 @@ export default async function Projects() {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {data &&
             data.map((obj) => (
               // card
-              <div className="border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden p-3">
+              <div className="bg-gray-800 border-2 border-gray-500 rounded-xl p-3">
                 {/* this div ensures buttons div to stay at bottom */}
                 <div className="flex flex-col h-full space-y-6">
                   {/* img div */}
                   <div>
                     <img
-                      className="w-full h-48"
+                      className="w-full h-48 rounded-md"
                       src={obj.img}
                       alt="project image"
                     />
