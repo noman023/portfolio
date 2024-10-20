@@ -24,6 +24,7 @@ export default function Contact() {
         () => {
           console.log("SUCCESS!");
           form.current.reset();
+          alert("Email sent successfully!");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -33,25 +34,31 @@ export default function Contact() {
 
   return (
     <div id="contact" className="my-16">
-      <h1
-        className={`text-center text-4xl uppercase mb-10 ${dancingScript.className}`}
-      >
-        Contact
-      </h1>
+      <div className="text-center mb-10">
+        <h1 className={`text-4xl uppercase ${dancingScript.className}`}>
+          Contact
+        </h1>
+
+        <p className="text-gray-400 text-lg mt-3">
+          You can send email to me through the form below!
+        </p>
+      </div>
 
       <form ref={form} onSubmit={sendEmail}>
-        <div className="flex flex-col md:flex-row gap-10 mb-6">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-10 mb-6">
           <input
             className="w-full bg-slate-800 p-4 rounded-lg"
             type="text"
             name="user_name"
             placeholder="Your Name"
+            required
           />
           <input
             className="w-full bg-slate-800 p-4 rounded-lg"
             type="text"
             name="user_email"
             placeholder="Your Email Address"
+            required
           />
         </div>
 
@@ -59,6 +66,7 @@ export default function Contact() {
           className="w-full bg-slate-800 p-4 rounded-lg"
           name="message"
           placeholder="Write your message here.."
+          required
         ></textarea>
 
         <div className="flex justify-center md:justify-end items-center">
