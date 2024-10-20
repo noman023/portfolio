@@ -18,6 +18,9 @@ export default function Header() {
           <a href="#projects" className="hover:text-gray-400 duration-300">
             Projects
           </a>
+          <a href="#contact" className="hover:text-gray-400 duration-300">
+            Contact
+          </a>
         </div>
 
         <a
