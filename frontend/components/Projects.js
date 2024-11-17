@@ -19,9 +19,12 @@ export default async function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {data &&
-            data.map((obj) => (
+            data.map((obj, idx) => (
               // card
-              <div className="bg-gray-800 border-2 border-gray-500 rounded-xl p-3">
+              <div
+                key={idx}
+                className="bg-gray-800 border-2 border-gray-500 rounded-xl p-3"
+              >
                 {/* this div ensures buttons div to stay at bottom */}
                 <div className="flex flex-col h-full space-y-6">
                   {/* img div */}
