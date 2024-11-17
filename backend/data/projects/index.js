@@ -6,12 +6,28 @@ const projects = [
     liveLink: "https://earnbuddy-dbb3d.firebaseapp.com/",
     sourceLink: [
       {
-        name: "Clinet",
+        name: "client",
         link: "https://github.com/noman023/earnBuddy-client",
       },
       {
         name: "Server",
         link: "https://github.com/noman023/earnBuddy-server",
+      },
+    ],
+  },
+  {
+    name: "Blog Haat",
+    desc: "A blogging application where users can read or write blogs, bookmark their favorite one and comment to encourage the author.",
+    img: "https://i.ibb.co.com/8X2nnXr/portfolio.png",
+    liveLink: "https://blog-haat.firebaseapp.com/",
+    sourceLink: [
+      {
+        name: "client",
+        link: "https://github.com/noman023/blog-haat",
+      },
+      {
+        name: "Server",
+        link: "https://github.com/noman023/blog-haat-server",
       },
     ],
   },
@@ -22,7 +38,7 @@ const projects = [
     liveLink: "https://assignment11-c9a59.web.app/",
     sourceLink: [
       {
-        name: "Clinet",
+        name: "client",
         link: "https://github.com/noman023/helpConnect-client",
       },
       {
@@ -38,7 +54,7 @@ const projects = [
     liveLink: "https://assignment10-4026e.web.app/",
     sourceLink: [
       {
-        name: "Clinet",
+        name: "client",
         link: "https://github.com/noman023/artGallery-client",
       },
       {
