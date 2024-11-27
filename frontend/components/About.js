@@ -15,7 +15,7 @@ export default async function About() {
           <p className="text-justify">{details}</p>
 
           <a href={cvLink} target="_blank">
-            <button className="bg-green-600 hover:bg-green-800 duration-300 rounded-xl p-3 mt-5">
+            <button className="bg-[#494949] hover:bg-[#636363] duration-500 rounded-xl p-3 mt-5">
               View Resume
             </button>
           </a>

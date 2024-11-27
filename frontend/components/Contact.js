@@ -72,7 +72,7 @@ export default function Contact() {
         <div className="flex justify-center md:justify-end items-center">
           <button
             type="submit"
-            className="bg-purple-700 hover:bg-purple-800 duration-300 rounded-lg p-3 mt-5"
+            className="bg-gray-500 hover:bg-gray-600 duration-300 rounded-lg p-3 mt-5"
           >
             Send Email
           </button>
