@@ -23,7 +23,7 @@ export default async function Projects() {
               // card
               <div
                 key={idx}
-                className="bg-gray-800 border-2 border-gray-500 rounded-xl p-3"
+                className="bg-gray-800 hover:bg-gray-900 duration-500 border-2 border-gray-500 hover:border-gray-700 rounded-xl hover:cursor-pointer"
               >
                 {/* this div ensures buttons div to stay at bottom */}
                 <div className="flex flex-col h-full space-y-6">
@@ -37,8 +37,8 @@ export default async function Projects() {
                   </div>
 
                   {/* project's info div */}
-                  <div className="space-y-1 flex-grow">
-                    <div className="flex justify-between items-center">
+                  <div className="space-y-1 flex-grow p-3">
+                    <div className="flex justify-between items-center mb-2">
                       <h1 className="text-xl font-semibold text-white mb-1">
                         {obj.name}
                       </h1>
@@ -56,14 +56,14 @@ export default async function Projects() {
                   </div>
 
                   {/* buttons div */}
-                  <div className="flex items-center justify-between text-sm">
+                  <div className="flex items-center justify-between text-sm p-3">
                     {obj.sourceLink.map((src, idx) => (
                       <a href={src.link} target="_blank" key={idx}>
                         <button
                           className={`rounded-lg ${
                             idx === 0
-                              ? "bg-purple-800 hover:bg-purple-900"
-                              : "bg-blue-800 hover:bg-blue-900"
+                              ? "bg-gray-500 hover:bg-gray-600"
+                              : "bg-[#636363] hover:bg-[#494949]"
                           } capitalize py-2 px-4 duration-300`}
                         >
                           {src.name}
