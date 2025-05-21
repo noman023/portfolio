@@ -6,16 +6,19 @@ import { dancingScript } from "@/app/layout";
 export default function Skills() {
   const skillsString = `
   const skills = {
-    core: {
+    frontend: {
       Languages: ["JavaScript", "TypeScript (basic)", "HTML5", "CSS3"],
-      Libraries: ["React.js", "Next.js",  "Tailwind CSS"],
-      StateManagement: ["Context API", "Redux"],
-      Others: ["Git", "GitHub", "Vs Code"],
+      Frameworks: ["React.js", "Next.js", "Tailwind CSS", "Shadcn"],
+      StateManagement: ["Context API"],
     },
-    familiar: {
-      Backend: ["Node.js", "Express.js"],
-      Databases: ["MongoDB"],
-    }
+    backend: {
+      Languages: ["Node.js", "SQL (basic)"],
+      Frameworks: ["Express.js"],
+      Databases: ["PostgreSQL", "MongoDB"],
+    },
+    others: {
+      tools: ["Git & GitHub", "Vs Code"],
+    },
   };
 `;
 
