@@ -7,17 +7,17 @@ export default function Skills() {
   const skillsString = `
   const skills = {
     frontend: {
-      Languages: ["JavaScript", "TypeScript (basic)", "HTML5", "CSS3"],
-      Frameworks: ["React.js", "Next.js", "Tailwind CSS", "Shadcn"],
-      StateManagement: ["Context API"],
+      languages: ["JavaScript/TypeScript", "HTML5", "CSS3"],
+      frameworksOrLibraries: ["React.js", "Next.js", "Tailwind CSS", "Tanstack's Libraries", "ShadCN UI"],
+      stateManagement: ["Context API", "Zustand"],
     },
     backend: {
-      Languages: ["Node.js", "SQL (basic)"],
-      Frameworks: ["Express.js"],
-      Databases: ["PostgreSQL", "MongoDB"],
+      languages: ["JavaScript (Node.js)", "SQL"],
+      frameworks: ["Express.js"],
+      databases: ["PostgreSQL", "MongoDB"],
     },
     others: {
-      tools: ["Git & GitHub", "Vs Code"],
+      tools: ["Git & GitHub", "Vs Code", "Postman"],
     },
   };
 `;

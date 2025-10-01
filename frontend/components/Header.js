@@ -26,7 +26,7 @@ export default function Header() {
         <a
           href="https://github.com/noman023/portfolio"
           target="_blank"
-          title="go to this project"
+          title="See Codebase"
         >
           <FaGithub className="w-9 h-8" />
         </a>

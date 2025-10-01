@@ -31,6 +31,7 @@ export default async function Footer() {
       </div>
 
       <p className="mt-3">molla.noman23@gmail.com</p>
+      <p className="mt-1 text-sm">01880-845650, 01627-184453</p>
     </section>
   );
 }
