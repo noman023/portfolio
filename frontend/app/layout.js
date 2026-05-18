@@ -5,11 +5,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const dancingScript = Dancing_Script(
   { subsets: ["latin"] },
-  { weight: "700" }
+  { weight: "700" },
 );
 
 export const metadata = {
-  title: "Portfolio of Noman",
+  title: "Noman | Problem Solver & Software Engineer",
 };
 
 export default function RootLayout({ children }) {
