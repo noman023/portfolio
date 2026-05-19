@@ -64,18 +64,6 @@ const projects = [
     ],
   },
   {
-    name: "Todo Application",
-    desc: "A todo application. created with redux-toolkit.",
-    img: "https://i.ibb.co/c1mqFbh/todo-app.png",
-    liveLink: "https://todo-app-noman.netlify.app/",
-    sourceLink: [
-      {
-        name: "Client",
-        link: "https://github.com/noman023/todo-app",
-      },
-    ],
-  },
-  {
     name: "Sticky Notes",
     desc: "An application like windows's sticky notes.",
     img: "https://i.ibb.co/DRYwtxy/sticky-notes.png",
