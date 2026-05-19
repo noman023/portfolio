@@ -12,12 +12,12 @@ export default function Skills() {
       stateManagement: ["Context API", "Zustand"],
     },
     backend: {
-      languages: ["JavaScript (Node.js)", "SQL"],
-      frameworks: ["Express.js"],
+      languages: ["c/c++", "JavaScript/TypeScript (Node.js)", "SQL"],
+      frameworks: ["Nestjs", "Express.js"],
       databases: ["PostgreSQL", "MongoDB"],
     },
     others: {
-      tools: ["Git & GitHub", "Vs Code", "Postman"],
+      tools: ["Git & GitHub", "Vs Code", "Cursor", "Postman"],
     },
   };
 `;
@@ -32,8 +32,19 @@ export default function Skills() {
         </h1>
       </div>
 
-      <div className="md:text-xl">
-        <SyntaxHighlighter language="javascript" style={a11yDark}>
+      <div className="md:text-xl overflow-x-auto">
+        <SyntaxHighlighter
+          language="javascript"
+          style={a11yDark}
+          customStyle={{ width: "100%", overflowX: "auto" }}
+          codeTagProps={{
+            style: {
+              whiteSpace: "pre-wrap",
+              wordBreak: "break-word",
+            },
+          }}
+          wrapLongLines={true}
+        >
           {skillsString}
         </SyntaxHighlighter>
       </div>
