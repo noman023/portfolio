@@ -19,18 +19,18 @@ export default async function Footer() {
   });
 
   return (
-    <section className="text-center text-gray-400 mt-10 pt-7 pb-10 border-t border-gray-500">
+    <section className="text-center text-gray-400 mt-14 pt-7 pb-10 border-t border-gray-500">
       <div className="w-full md:w-1/5 md:m-auto flex items-center justify-around md:justify-between">
         {updatedData.map((obj, idx) => (
           <div key={idx}>
             <a href={obj.link} target="_blank" title={`To ${obj.name} Profile`}>
-              <obj.IconComponent className="w-6 h-6 hover:text-gray-500 duration-300" />
+              <obj.IconComponent className="w-5 h-5 hover:text-gray-500 duration-300" />
             </a>
           </div>
         ))}
       </div>
 
-      <p className="mt-3">molla.noman23@gmail.com</p>
+      <p className="mt-3 text-sm">molla.noman23@gmail.com</p>
       <p className="mt-1 text-sm">01880-845650, 01627-184453</p>
     </section>
   );
