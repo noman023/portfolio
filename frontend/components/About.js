@@ -3,7 +3,7 @@ import Image from "next/image";
 import { fetchData } from "@/utils/fetchData";
 
 export default async function About() {
-  const { headline, details, cvLink, img } = await fetchData();
+  const { headline, details, cvLink } = await fetchData();
 
   return (
     <main className="py-[60px] flex flex-col-reverse gap-7 md:flex-row px-5 md:px-0">
@@ -25,7 +25,12 @@ export default async function About() {
       {/* img div */}
       <div className="w-full md:w-1/2 flex justify-center mb-6">
         <div className="bg-slate-800 p-6">
-          <Image src={img} alt="picture of Noman" width={150} height={150} />
+          <Image
+            src="/noman.jpg"
+            alt="picture of Noman"
+            width={150}
+            height={150}
+          />
         </div>
       </div>
     </main>
