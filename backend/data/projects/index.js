@@ -63,18 +63,6 @@ const projects = [
       },
     ],
   },
-  {
-    name: "Sticky Notes",
-    desc: "An application like windows's sticky notes.",
-    img: "https://i.ibb.co/DRYwtxy/sticky-notes.png",
-    liveLink: "https://sticky-notes-noman.netlify.app/",
-    sourceLink: [
-      {
-        name: "Client",
-        link: "https://github.com/noman023/windows-sticky-notes",
-      },
-    ],
-  },
 ];
 
 module.exports = projects;
