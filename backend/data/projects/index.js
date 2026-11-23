@@ -1,5 +1,17 @@
 const projects = [
   {
+    name: "ShopSphere",
+    desc: "A simple e-commerce web application that allows users to browse products, manage a shopping cart, and place orders. This project demonstrates the core features of a modern online shopping platform.",
+    img: "/shop_sphere.png",
+    liveLink: "https://shop-sphere-client-psi.vercel.app/",
+    sourceLink: [
+      {
+        name: "codebase",
+        link: "https://github.com/noman023/shop-sphere",
+      },
+    ],
+  },
+  {
     name: "Earn Buddy",
     desc: "The EarnBuddy is a Platform where users can complete small tasks and earn rewards. Three distinguished user role (admin, task creator, worker) implemented.",
     img: "https://i.ibb.co/jrsYYb4/earn-Buddy.png",
