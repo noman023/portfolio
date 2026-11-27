@@ -6,7 +6,7 @@ logs
 node_modules/
 
 # Environment variables
-.env
+.env*
 
 # Build output
 build/
